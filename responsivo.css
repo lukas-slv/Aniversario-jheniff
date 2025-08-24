@@ -1,0 +1,83 @@
+/* Garante que imagens e containers não ultrapassem a largura da tela */
+img, .img-logo001, .img-logo002, .img-logo003, #aniversario, #jheniff {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ajusta títulos para telas menores */
+h1, .h1001, .h1002, .h1003 {
+    word-break: break-word;
+    max-width: 95vw;
+}
+
+/* Flexbox para empilhar colunas em telas pequenas */
+.div-pai {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Ajusta espaçamento e tamanho de fontes em telas médias */
+@media (max-width: 900px) {
+    header h1, h1#titulo-principal {
+        font-size: 2em;
+    }
+    .h1001, .h1002, .h1003 {
+        font-size: 1.5em;
+    }
+    .data-aniversario span {
+        font-size: 1.5em;
+    }
+    .img-logo001, .img-logo002, .img-logo003 {
+        max-width: 120px;
+    }
+    .mensagem, .mensagem--02, .mensagem--03 {
+        padding: 15px 5px;
+    }
+}
+
+/* Ajusta para celulares */
+@media (max-width: 600px) {
+    header h1, h1#titulo-principal {
+        font-size: 1.2em;
+        margin-bottom: -10px;
+    }
+    .h1001, .h1002, .h1003 {
+        font-size: 1em;
+        margin-top: 10px;
+    }
+    .data-aniversario {
+        gap: 5px;
+    }
+    .data-aniversario span {
+        font-size: 1em;
+    }
+    .vertical-line {
+        height: 1.2em;
+        margin: 0 5px;
+    }
+    .img-logo001, .img-logo002, .img-logo003 {
+        max-width: 70px;
+        margin: 10px auto;
+    }
+    .mensagem, .mensagem--02, .mensagem--03 {
+        padding: 8px 2px;
+        margin: 10px 0;
+    }
+    .p-destaque03 {
+        font-size: 1em;
+        margin-top: 10px;
+    }
+    .linha-horizontal {
+        margin: 10px 0;
+    }
+}
+
+/* Garante que textos grandes não estourem a tela */
+p, .p-destaque03 {
+    word-break: break-word;
+    max-width: 98vw;
+}
