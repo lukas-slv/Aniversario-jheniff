@@ -6,6 +6,16 @@ img, .img-logo001, .img-logo002, .img-logo003, #aniversario, #jheniff {
     margin-left: auto;
     margin-right: auto;
 }
+#aniversario {
+    width: 100%;
+
+    margin-bottom: 20px;
+}
+
+#jheniff {
+    margin-top: -99px;
+    margin-bottom: 20px;
+}
 
 /* Ajusta títulos para telas menores */
 h1, .h1001, .h1002, .h1003 {
@@ -22,11 +32,15 @@ h1, .h1001, .h1002, .h1003 {
 
 /* Ajusta espaçamento e tamanho de fontes em telas médias */
 @media (max-width: 900px) {
+    
     header h1, h1#titulo-principal {
-        font-size: 2em;
+        font-size: 1em;
     }
     .h1001, .h1002, .h1003 {
         font-size: 1.5em;
+    }
+    .h1001 {
+        margin-top: 20px;
     }
     .data-aniversario span {
         font-size: 1.5em;
@@ -34,23 +48,26 @@ h1, .h1001, .h1002, .h1003 {
     .img-logo001, .img-logo002, .img-logo003 {
         max-width: 120px;
     }
+    
     .mensagem, .mensagem--02, .mensagem--03 {
         padding: 15px 5px;
     }
+    
 }
 
 /* Ajusta para celulares */
 @media (max-width: 600px) {
     header h1, h1#titulo-principal {
-        font-size: 1.2em;
-        margin-bottom: -10px;
+        font-size: 1.5em;
+        margin-bottom: -30px;
     }
     .h1001, .h1002, .h1003 {
-        font-size: 1em;
+        font-size: 2.4em;
         margin-top: 10px;
     }
     .data-aniversario {
         gap: 5px;
+        font-size: 1.9em;
     }
     .data-aniversario span {
         font-size: 1em;
@@ -60,14 +77,21 @@ h1, .h1001, .h1002, .h1003 {
         margin: 0 5px;
     }
     .img-logo001, .img-logo002, .img-logo003 {
-        max-width: 70px;
+        max-width:150px;
         margin: 10px auto;
+        margin-bottom: -20px;
     }
+    .img-logo002 {
+        max-width: 150px;
+        display: block;
+    }
+    
     .mensagem, .mensagem--02, .mensagem--03 {
-        padding: 8px 2px;
-        margin: 10px 0;
+        padding: 8px 30px ;
+        margin: 20px 0;
     }
     .p-destaque03 {
+        font-family: "Cormorant", serif;
         font-size: 1em;
         margin-top: 10px;
     }
