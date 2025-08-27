@@ -45,7 +45,7 @@ h1#titulo-principal {
 }
 
 .img-logo001 {
-    margin: 120px auto -20px auto;
+    margin: 30px auto -20px auto;
     max-width: 17%;
 }
 
@@ -198,9 +198,81 @@ article {
     background-color: rgba(33, 80, 88, 0.253);
     margin: 20px auto;
 }
-
-p {
+.destaque02
+{
+    text-align: left;
+    font-family: "Cormorant", serif;
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+.div-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 95px;
+}
+.conteudo {
+    text-align: center;
+    font-family: "Cormorant", serif;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.4em;
     line-height: 1.5em;
+}
+
+/* Rodapé secreto */
+.secret-footer{
+  max-width: 900px;
+  margin: 4rem auto 2rem;
+  padding: 0 1rem;
+  font-family: inherit;
+}
+
+.secret-footer details{
+  background: transparent;
+  border: none;
+}
+
+.secret-footer summary{
+  list-style: none;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: .3px;
+  text-align: center;
+  padding: .75rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #FBF4E4;
+  backdrop-filter: blur(4px);
+  transition: transform .2s ease, background .2s ease;
+}
+
+.secret-footer summary:hover{
+  transform: translateY(-1px);
+  background: #FBF4E4;
+}
+
+/* Cartão da mensagem */
+.secret-card{
+  margin-top: 1rem;
+  padding: 1.25rem 1.25rem 1.5rem;
+  border-radius: 16px;
+  background: #FBF4E4;           /* ajuste se o fundo for claro */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.26);
+  line-height: 1.7;
+  font-size: 0.98rem;
+  animation: fadeIn .45s ease forwards;
+}
+
+.secret-card p{ margin: 0 0 .9rem; }
+
+.secret-card .signature{
+  margin-top: .5rem;
+  font-style: italic;
+  opacity: .85;
+  text-align: right;
+}
+
+@keyframes fadeIn{
+  from{ opacity: 0; transform: translateY(8px); }
+  to{ opacity: 1; transform: translateY(0); }
 }

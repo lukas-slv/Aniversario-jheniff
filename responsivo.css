@@ -6,15 +6,15 @@ img, .img-logo001, .img-logo002, .img-logo003, #aniversario, #jheniff {
     margin-left: auto;
     margin-right: auto;
 }
+.img-logo002 {
+   margin-bottom: 20px;
+}
 #aniversario {
     width: 100%;
-
     margin-bottom: 20px;
 }
-
 #jheniff {
-    margin-top: -99px;
-    margin-bottom: 20px;
+    display: none;
 }
 
 /* Ajusta títulos para telas menores */
@@ -32,7 +32,6 @@ h1, .h1001, .h1002, .h1003 {
 
 /* Ajusta espaçamento e tamanho de fontes em telas médias */
 @media (max-width: 900px) {
-    
     header h1, h1#titulo-principal {
         font-size: 1em;
     }
@@ -48,11 +47,17 @@ h1, .h1001, .h1002, .h1003 {
     .img-logo001, .img-logo002, .img-logo003 {
         max-width: 120px;
     }
-    
     .mensagem, .mensagem--02, .mensagem--03 {
         padding: 15px 5px;
     }
-    
+
+    .p-destaque03 {
+        font-family: "Cormorant", serif;
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+    /* Se quiser esconder .mensagem só aqui, descomente a linha abaixo */
+    /* .mensagem { display: none; } */
 }
 
 /* Ajusta para celulares */
@@ -85,7 +90,6 @@ h1, .h1001, .h1002, .h1003 {
         max-width: 150px;
         display: block;
     }
-    
     .mensagem, .mensagem--02, .mensagem--03 {
         padding: 8px 30px ;
         margin: 20px 0;
@@ -95,9 +99,16 @@ h1, .h1001, .h1002, .h1003 {
         font-size: 1em;
         margin-top: 10px;
     }
+    .p-destaque02{
+        font-family: "Cormorant", serif;
+        font-size: 1em;
+        margin-top: 10px;
+    }
     .linha-horizontal {
         margin: 10px 0;
     }
+    /* Se quiser esconder .mensagem só aqui, descomente a linha abaixo */
+    /* .mensagem { display: none; } */
 }
 
 /* Garante que textos grandes não estourem a tela */
@@ -105,3 +116,4 @@ p, .p-destaque03 {
     word-break: break-word;
     max-width: 98vw;
 }
+
