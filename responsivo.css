@@ -23,13 +23,13 @@
     }
 
     .mensagem, .mensagem--02, .mensagem--03 {
-        width: 95%;
+        max-width: 95%;
         padding: 1rem;
         min-height: auto;
     }
 
     .img-logo001, .img-logo002, .img-logo003 {
-        max-width: 50%;
+        max-width: 40%;
         margin: 1rem auto;
     }
 
@@ -61,6 +61,7 @@
     }
 
     .mensagem--03 {
+
         padding: 2rem;
     }
 
