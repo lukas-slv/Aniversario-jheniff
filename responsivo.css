@@ -1,119 +1,99 @@
-/* Garante que imagens e containers não ultrapassem a largura da tela */
-img, .img-logo001, .img-logo002, .img-logo003, #aniversario, #jheniff {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.img-logo002 {
-   margin-bottom: 20px;
-}
-#aniversario {
-    width: 100%;
-    margin-bottom: 20px;
-}
-#jheniff {
-    display: none;
-}
+/* responsivo.css */
+@charset "UTF-8";
 
-/* Ajusta títulos para telas menores */
-h1, .h1001, .h1002, .h1003 {
-    word-break: break-word;
-    max-width: 95vw;
-}
+/* MOBILE-FIRST OVERRIDE */
 
-/* Flexbox para empilhar colunas em telas pequenas */
-.div-pai {
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: stretch;
-}
-
-/* Ajusta espaçamento e tamanho de fontes em telas médias */
-@media (max-width: 900px) {
-    header h1, h1#titulo-principal {
-        font-size: 1em;
+/* Para telas até 480px (celulares pequenos) */
+@media (max-width: 480px) {
+    #titulo-principal {
+        font-size: 1.8rem;
+        margin: 1rem 0;
     }
+
     .h1001, .h1002, .h1003 {
-        font-size: 1.5em;
+        font-size: clamp(1.2rem, 2vw, 2.5rem);
+        text-align: center;
     }
-    .h1001 {
-        margin-top: 20px;
+
+    .div-pai {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem auto;
     }
-    .data-aniversario span {
-        font-size: 1.5em;
-    }
-    .img-logo001, .img-logo002, .img-logo003 {
-        max-width: 120px;
-    }
+
     .mensagem, .mensagem--02, .mensagem--03 {
-        padding: 15px 5px;
+        width: 95%;
+        padding: 1rem;
+        min-height: auto;
     }
 
-    .p-destaque03 {
-        font-family: "Cormorant", serif;
-        font-size: 1.2em;
-        margin-top: 10px;
+    .img-logo001, .img-logo002, .img-logo003 {
+        max-width: 50%;
+        margin: 1rem auto;
     }
-    /* Se quiser esconder .mensagem só aqui, descomente a linha abaixo */
-    /* .mensagem { display: none; } */
-}
 
-/* Ajusta para celulares */
-@media (max-width: 600px) {
-    header h1, h1#titulo-principal {
-        font-size: 1.5em;
-        margin-bottom: -30px;
-    }
-    .h1001, .h1002, .h1003 {
-        font-size: 2.4em;
-        margin-top: 10px;
-    }
     .data-aniversario {
-        gap: 5px;
-        font-size: 1.9em;
+        flex-direction: column;
+        gap: 0.5rem;
     }
-    .data-aniversario span {
-        font-size: 1em;
-    }
+
     .vertical-line {
-        height: 1.2em;
-        margin: 0 5px;
+        display: none;
     }
-    .img-logo001, .img-logo002, .img-logo003 {
-        max-width:150px;
-        margin: 10px auto;
-        margin-bottom: -20px;
+
+    .letters-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
     }
-    .img-logo002 {
-        max-width: 150px;
-        display: block;
-    }
-    .mensagem, .mensagem--02, .mensagem--03 {
-        padding: 8px 30px ;
-        margin: 20px 0;
-    }
-    .p-destaque03 {
-        font-family: "Cormorant", serif;
-        font-size: 1em;
-        margin-top: 10px;
-    }
-    .p-destaque02{
-        font-family: "Cormorant", serif;
-        font-size: 1em;
-        margin-top: 10px;
-    }
-    .linha-horizontal {
-        margin: 10px 0;
-    }
-    /* Se quiser esconder .mensagem só aqui, descomente a linha abaixo */
-    /* .mensagem { display: none; } */
 }
 
-/* Garante que textos grandes não estourem a tela */
-p, .p-destaque03 {
-    word-break: break-word;
-    max-width: 98vw;
+/* Para telas até 768px (tablets) */
+@media (max-width: 768px) {
+    .div-pai {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .mensagem, .mensagem--02 {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .mensagem--03 {
+        padding: 2rem;
+    }
+
+    .h1001, .h1002, .h1003 {
+        font-size: clamp(1.5rem, 2vw, 3rem);
+    }
+
+    .letters-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
 }
 
+/* Para telas até 1024px (desktops pequenos) */
+@media (max-width: 1024px) {
+    .div-pai {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mensagem, .mensagem--02 {
+        max-width: 45%;
+        padding: 1.5rem;
+    }
+
+    .mensagem--03 {
+        padding: 2.5rem;
+    }
+}
+
+/* Ajustes de tipografia fluida e alinhamento */
+@media (max-width: 1280px) {
+    .p-destaque03, .destaque02, .conteudo {
+        font-size: clamp(1rem, 1vw, 1.3rem);
+        text-align: justify;
+    }
+}

@@ -4,115 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsivo.css" media="screen and (max-width: 900px)">
+    <link rel="stylesheet" href="responsivo.css">
     <link rel="shortcut icon" href="imagem-do-meio/08.png" type="image/x-icon">
-    <title>feliz aniversário</title>
+    <title>Feliz aniversário</title>
 </head>
 <body>
-
-
     <header>
-        <h1 id="titulo-principal">Feliz aniversário Jheniffer anjos</h1>
+        <h1 id="titulo-principal">Feliz aniversário Jheniffer Anjos</h1>
     </header>
 
     <img id="aniversario" src="imagem topo/001.png" alt="aniversário">
 
     <main class="titulo">
         <img class="img-logo001" src="imagem-do-meio/08.png" alt="imagem">
+
         <h1 class="h1001">Que Deus te abençoe sempre</h1>
 
         <section>
             <div class="data-aniversario">
                 <span>16</span>
-                <hr class="vertical-line">
+                <div class="vertical-line"></div>
                 <span>09</span>
-                <hr class="vertical-line">
+                <div class="vertical-line"></div>
                 <span>2025</span>
             </div>
-            <img class="img-logo002" src="imagem-do-meio/07.png" alt="imagem">
         </section>
 
         <div class="div-pai">
             <div class="mensagem">
                 <article id="mensagem001">
-                    <div>
-                        <img id="jheniff" src="imagem-do-meio/04.jpg" alt="foto de jheniff">
-                    </div>
+                    <img id="jheniff" src="imagem-do-meio/04.jpg" alt="foto de Jheniffer">
                 </article>
             </div>
 
             <div class="mensagem--02">
                 <article id="mensagem02">
-                    <div>
-                        <h1 class="h1002">Feliz aniversário</h1>
-                        <br>
-                        <hr>
-                        <br><br><br>
-                        <p class="destaque02">
-                            Hoje não é só mais um dia… é o teu dia, e eu espero que ele seja do jeito que você merece: cheio de paz, sorrisos e aquela sensação boa de recomeço.
-                            <br><br>
-                            Você é uma pessoa incrível, e eu admiro demais tua força, tua forma de enxergar a vida e a coragem de seguir teus próprios caminhos. Que esse novo ciclo venha trazendo leveza, conquistas e muitas razões pra acreditar ainda mais em você mesma.
-                            <br><br>
-                            Pode ter certeza: torço por você de verdade, não só hoje, mas todos os dias. 
-                            Parabéns!”
-                        </p>
-                    </div>
+                    <h1 class="h1002">Feliz aniversário</h1>
+                    <hr>
+                    <p class="destaque02">
+                        Hoje não é só mais um dia… é o teu dia, e eu espero que ele seja do jeito que você merece: cheio de paz, sorrisos e aquela sensação boa de recomeço.
+                        <br><br>
+                        Você é uma pessoa incrível, e eu admiro demais tua força, tua forma de enxergar a vida e a coragem de seguir teus próprios caminhos. Que esse novo ciclo venha trazendo leveza, conquistas e muitas razões pra acreditar ainda mais em você mesma.
+                        <br><br>
+                        Pode ter certeza: torço por você de verdade, não só hoje, mas todos os dias. Parabéns!
+                    </p>
                 </article>
             </div>
         </div>
-        <div class="div-conteudo">
-           <P class="conteudo">
-            “Depois de tanto tempo, a vida nos deu a chance de conversar de novo.
-            Esse reencontro foi um dos melhores presentes que eu poderia ter.
-            Nossas conversas têm sido leves, sinceras e especiais… e eu quero valorizar isso cada vez mais.”
-        </P> 
 
+        <div class="div-conteudo">
+            <p class="conteudo">
+                Depois de tanto tempo, a vida nos deu a chance de conversar de novo.
+                Esse reencontro foi um dos melhores presentes que eu poderia ter.
+                Nossas conversas têm sido leves, sinceras e especiais… e eu quero valorizar isso cada vez mais.
+            </p>
         </div>
-        
+
+        <section class="letters">
+            <h2 class="title-cartas">Três cartinhas pra você</h2>
+            <div class="letters-grid">
+                <div class="letter" onclick="openLetter(1)">
+                    <p class="text-cartas">Carta I</p>
+                </div>
+                <div class="letter" onclick="openLetter(2)">
+                    <p class="text-cartas">Carta II</p>
+                </div>
+                <div class="letter" onclick="openLetter(3)">
+                    <p class="text-cartas">Carta III</p>
+                </div>
+            </div>
+            <div id="letter-text" class="letter-text"></div>
+        </section>
+
         <div class="mensagem--03">
             <article id="mensagem03">
-                <div class="destaque03">
-                    <img class="img-logo003" src="imagem-do-meio/07.png" alt="imagem">
-                </div>
+                <img class="img-logo003" src="imagem-do-meio/07.png" alt="imagem">
             </article>
             <h1 class="h1003">Que Deus te abençoe sempre</h1>
             <hr class="linha-horizontal">
             <p class="p-destaque03">
-                “Jheniff, nesses últimos dias eu tenho pensado bastante sobre como foi bom a gente se encontrar de novo depois de tanto tempo. Às vezes a vida parece brincar com a gente, separa por anos, coloca cada um em caminhos tão diferentes… e, do nada, cruza de novo como se fosse pra lembrar que algumas conexões não se perdem nunca.
+                Jheniffer, nesses últimos dias eu tenho pensado bastante sobre como foi bom a gente se encontrar de novo depois de tanto tempo. Às vezes a vida parece brincar com a gente, separa por anos, coloca cada um em caminhos tão diferentes… e, do nada, cruza de novo como se fosse pra lembrar que algumas conexões não se perdem nunca.
                 <br><br>
                 Conversar contigo hoje me traz uma sensação boa, meio difícil até de explicar. É como se eu tivesse reencontrado uma parte da minha história que estava guardada, esperando o momento certo pra voltar. Eu sinto que nossas conversas têm um peso diferente, uma verdade que não dá pra forçar nem inventar. É natural, é leve, mas ao mesmo tempo profundo. 
                 <br><br>
-                Eu sei que cada um de nós tem suas lutas, seus planos e os próprios sonhos, mas ter você de volta na minha vida me faz enxergar que, mesmo à distância, existem pessoas que valem a pena manter por perto de qualquer jeito. E você é uma delas.
-                <br><br>
                 Não quero que isso soe meloso ou exagerado, mas de verdade: eu valorizo demais a gente ter se reencontrado. Eu acredito que nada acontece por acaso, e eu quero cuidar dessa amizade, dessa conexão, do jeito mais sincero possível. Pode ter certeza que da minha parte não falta verdade.
                 <br><br>
-                Obrigado por estar aqui de novo, Jheniff. Nosso reencontro é um presente que eu não quero deixar passar despercebido.
+                Obrigado por estar aqui de novo, Jheniffer. Nosso reencontro é um presente que eu não quero deixar passar despercebido.
             </p>
         </div>
-
-        <p>"Que Deus te abençoe sempre e sempre lembre de mim</p>
     </main>
 
     <footer class="secret-footer">
-  <details>
-    <summary> <p class="p-destaque0">Uma última coisinha…</p></summary>
-    <div class="secret-card">
-      <p class="p-destaque03">
-        Se você chegou até aqui, é porque esse presente era mesmo pra você.
-        Jheniff, eu não tenho palavras pra explicar o quanto foi bom reencontrar
-        você depois de tanto tempo. Este espaço simples é só uma forma de dizer
-        que você é especial, que sua presença faz diferença e que eu admiro a
-        pessoa incrível que você é.
-      </p>
-      <p class="p-destaque03">
-        Que cada sonho teu floresça, e que Deus te guie em cada passo.
-        Eu torço por você de verdade — hoje, amanhã e sempre.
-      </p>
-      <div class="signature"><p>— Lukas</p></div>
-    </div>
-  </details>
-</footer>
+        <details>
+            <summary>
+                <p class="p-destaque0">Uma última coisinha…</p>
+            </summary>
+            <div class="secret-card">
+                <p class="p-destaque03">
+                    Se você chegou até aqui, é porque esse presente era mesmo pra você.
+                    Jheniffer, eu não tenho palavras pra explicar o quanto foi bom reencontrar você depois de tanto tempo. Este espaço simples é só uma forma de dizer que você é especial, que sua presença faz diferença e que eu admiro a pessoa incrível que você é.
+                </p>
+                <p class="p-destaque03">
+                    Que cada sonho teu floresça, e que Deus te guie em cada passo.
+                    Eu torço por você de verdade — hoje, amanhã e sempre.
+                </p>
+                <div class="signature">
+                    <p>— Lukas</p>
+                </div>
+            </div>
+        </details>
+    </footer>
 
-
+    <script>
+        function openLetter(num) {
+            let msg = "";
+            if (num === 1) {
+                msg = "✨ O que admiro em você: tua força, tua luz e o jeito de transformar tudo ao redor.";
+            } else if (num === 2) {
+                msg = "🌻 O que desejo pra sua vida: paz, conquistas e muitos motivos pra sorrir todos os dias.";
+            } else if (num === 3) {
+                msg = "💛 O que nosso reencontro significa pra mim: um presente que eu não esperava, mas agradeço a Deus.";
+            }
+            document.getElementById("letter-text").innerText = msg;
+        }
+    </script>
 </body>
 </html>
