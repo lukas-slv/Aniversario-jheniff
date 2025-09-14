@@ -5,14 +5,36 @@
 
 /* Para telas até 480px (celulares pequenos) */
 @media (max-width: 480px) {
-    #titulo-principal {
-        font-size: 1.8rem;
-        margin: 1rem 0;
-    }
+   
 
     .h1001, .h1002, .h1003 {
         font-size: clamp(1.2rem, 2vw, 2.5rem);
         text-align: center;
+        max-width: 90vw;
+        margin: 0.5rem auto;
+    }
+    .div-conteudo {
+        margin: 20px;
+    }
+    .p-conteudo {
+        font-size: 17px;
+        text-align: justify;
+        margin: 0 1rem;
+    }
+
+    #jheniff {
+        display: block;
+        max-width: 90vw;
+        width: 400%;
+        height: auto;
+        margin: 1rem auto;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+
+    .destaque02 {
+        font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+        text-align: justify;
+        margin: 0 1rem;
     }
 
     .div-pai {
@@ -20,31 +42,58 @@
         align-items: center;
         gap: 1rem;
         margin: 1rem auto;
+        width: 100%;
     }
 
-    .mensagem, .mensagem--02, .mensagem--03 {
-        max-width: 95%;
+    .mensagem, .mensagem--03 {
+        max-width: 95vw;
         padding: 1rem;
         min-height: auto;
+        box-sizing: border-box;
     }
 
+    
+     
+    #mensagem02{
+       
+        max-width: 300%;
+        height: auto;
+        margin-top: 10px;
+    }
     .img-logo001, .img-logo002, .img-logo003 {
-        max-width: 40%;
+        max-width: 60vw;
         margin: 1rem auto;
+        display: block;
+        height: auto;
+    }
+    .img-logo001 {
+        max-width: 35vw;
+        margin: -1rem auto;
     }
 
     .data-aniversario {
-        flex-direction: column;
+        font-size: clamp(-2.9rem, 3.5vw, 1.2rem);
+        text-align: center;
+        margin: 0.5rem auto;
+        display: flex;
+        justify-content: center;
         gap: 0.5rem;
     }
 
     .vertical-line {
-        display: none;
+        height: 2.5em;
+        margin: 0 0.2rem;
+        width: 2px;
+        background: #fff;
+        border: none;
+        display: inline-block;
     }
 
     .letters-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 0.5rem;
+        width: 100%;
     }
 }
 
@@ -53,24 +102,37 @@
     .div-pai {
         flex-direction: column;
         gap: 1.5rem;
+        width: 100%;
     }
 
     .mensagem, .mensagem--02 {
-        width: 90%;
+        width: 95vw;
         padding: 1rem;
+        box-sizing: border-box;
     }
 
     .mensagem--03 {
-
         padding: 2rem;
+        width: 95vw;
+        box-sizing: border-box;
     }
 
     .h1001, .h1002, .h1003 {
-        font-size: clamp(1.5rem, 2vw, 3rem);
+        font-size: clamp(2.7rem, 9vw, 3.5rem);
+        max-width: 95vw;
+        margin: 1rem auto;
+    }
+    .h1001 {
+        font-size: clamp(2rem, 10vw, 35rem);
+        
+        margin: 1rem auto;
     }
 
     .letters-grid {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 100%;
     }
 }
 
@@ -79,22 +141,28 @@
     .div-pai {
         flex-wrap: wrap;
         justify-content: center;
+        width: 100%;
     }
 
     .mensagem, .mensagem--02 {
-        max-width: 45%;
+        max-width: 90vw;
         padding: 1.5rem;
+        box-sizing: border-box;
     }
 
     .mensagem--03 {
         padding: 2.5rem;
+        max-width: 95vw;
+        box-sizing: border-box;
     }
 }
 
 /* Ajustes de tipografia fluida e alinhamento */
 @media (max-width: 1280px) {
     .p-destaque03, .destaque02, .conteudo {
-        font-size: clamp(1rem, 1vw, 1.3rem);
+        font-size: clamp(1.2rem, 1vw, 1.3rem);
         text-align: justify;
+        max-width: 95vw;
+        margin: 0 auto;
     }
 }
