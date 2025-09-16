@@ -370,5 +370,22 @@ article {
     margin-bottom: 1.5rem;
     color: #ffffff;
 }
+.music {
+    text-align: center;
+    margin-top: 20px;
+}
+.music :hover {
+    transform: scale(1.05);
+    transition: transform .2s;
+     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.623);
+}
+.music audio {
+    width: 300px;
+    height: 35px;
+    border-radius: 20px;
+  
+}
+
+
 
 
