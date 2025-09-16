@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
+/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Fjalla+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+/* Reset e base */
 * {
     margin: 0;
     padding: 0;
@@ -15,12 +17,12 @@ html, body {
     min-height: 100vh;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 h1#titulo-principal {
     color: #d68a10;
@@ -30,6 +32,7 @@ h1#titulo-principal {
     margin-bottom: -30px;
 }
 
+/* Imagens principais */
 #aniversario {
     display: block;
     margin: 40px auto 20px auto;
@@ -59,6 +62,7 @@ h1#titulo-principal {
     max-width: 35%;
 }
 
+/* Títulos */
 .h1001 {
     text-align: center;
     font-family: "Cormorant", serif;
@@ -69,6 +73,7 @@ h1#titulo-principal {
     font-weight: 100;
     line-height: 1.2em;
 }
+
 .h1002 {
     font-family: "Cormorant", serif;
     margin: 20px auto 0 auto;
@@ -90,13 +95,14 @@ h1#titulo-principal {
     line-height: 1.2em;
 }
 
-hr{
-    width: 100%; 
+/* Linha horizontal */
+hr {
+    width: 100%;
     height: 2px;
     background-color: rgba(255, 255, 255, 0.562);
-   
 }
 
+/* Data de aniversário */
 section > div {
     margin-top: 20px;
 }
@@ -124,6 +130,7 @@ section > div {
     margin: 0 20px;
 }
 
+/* Estrutura principal */
 .div-pai {
     display: flex;
     justify-content: center;
@@ -151,7 +158,6 @@ section > div {
     height: 700px;
     margin: 20px 9px;
     font-weight: lighter;
-   
 }
 
 .mensagem--03 {
@@ -176,7 +182,6 @@ section > div {
     height: auto;
     box-sizing: border-box;
     margin: 0 auto;
-  
 }
 
 article {
@@ -188,6 +193,7 @@ article {
     width: 100%;
 }
 
+/* Destaques e textos */
 .p-destaque03 {
     text-align: left;
     font-family: "Cormorant", serif;
@@ -196,7 +202,6 @@ article {
     margin-top: 40px;
 }
 
-
 .linha-horizontal {
     width: 100%;
     border: none;
@@ -204,20 +209,22 @@ article {
     background-color: rgba(33, 80, 88, 0.253);
     margin: 20px auto;
 }
-.destaque02
-{
+
+.destaque02 {
     text-align: left;
     font-family: "Cormorant", serif;
     color: #ffffff;
     font-size: 1.5em;
     margin-top: 40px;
 }
+
 .div-conteudo {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px 95px;
 }
+
 .conteudo {
     text-align: center;
     font-family: "Cormorant", serif;
@@ -227,102 +234,141 @@ article {
 }
 
 /* Rodapé secreto */
-.secret-footer{
-  max-width: 900px;
-  margin: 4rem auto 2rem;
-  padding: 0 1rem;
-  font-family: inherit;
+.secret-footer {
+    max-width: 900px;
+    margin: 4rem auto 2rem;
+    padding: 0 1rem;
+    font-family: inherit;
 }
 
-.secret-footer details{
-  background: transparent;
-  border: none;
+.secret-footer details {
+    background: transparent;
+    border: none;
 }
 
-.secret-footer summary{
-  list-style: none;
-  cursor: pointer;
-  font-weight: 600;
-  letter-spacing: .3px;
-  text-align: center;
-  padding: .75rem 1rem;
-  border-radius: 999px;
-  border: 1px solid #FBF4E4;
-  backdrop-filter: blur(4px);
-  transition: transform .2s ease, background .2s ease;
+.secret-footer summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: .3px;
+    text-align: center;
+    padding: .75rem 1rem;
+    border-radius: 999px;
+    border: 1px solid #FBF4E4;
+    backdrop-filter: blur(4px);
+    transition: transform .2s ease, background .2s ease;
 }
 
-.secret-footer summary:hover{
-  transform: translateY(-1px);
-  background: #FBF4E4;
-  
+.secret-footer summary:hover {
+    transform: translateY(-1px);
+    background: #FBF4E4;
 }
+
 .p-destaque0 {
     font-family: "Cormorant", serif;
     color: #d8d8d8;
     font-size: 1.4em;
     line-height: 1.5em;
 }
+
 .p-destaque0:hover {
     color: #37585C;
 }
+
 /* Cartão da mensagem */
-.secret-card{
-  margin-top: 1rem;
-  padding: 1.25rem 1.25rem 1.5rem;
-  border-radius: 16px;
-  background: #FBF4E4;           /* ajuste se o fundo for claro */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.26);
-  line-height: 1.7;
-  font-size: 0.98rem;
-  animation: fadeIn .45s ease forwards;
+.secret-card {
+    margin-top: 1rem;
+    padding: 1.25rem 1.25rem 1.5rem;
+    border-radius: 16px;
+    background: #FBF4E4;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.26);
+    line-height: 1.7;
+    font-size: 0.98rem;
+    animation: fadeIn .45s ease forwards;
 }
 
-.secret-card p{ margin: 0 0 .9rem; }
-
-.secret-card .signature{
-  margin-top: .5rem;
-  font-style: italic;
-  opacity: .85;
-  text-align: right;
+.secret-card p {
+    margin: 0 0 .9rem;
 }
 
-@keyframes fadeIn{
-  from{ opacity: 0; transform: translateY(8px); }
-  to{ opacity: 1; transform: translateY(0); }
+.secret-card .signature {
+    margin-top: .5rem;
+    font-style: italic;
+    opacity: .85;
+    text-align: right;
 }
 
-.letters{ text-align: center; margin: 3rem auto; }
-.letters-grid{ display: flex; justify-content: center; gap: 1rem; margin-top: 1rem; }
-.letter{
-  background: rgba(255,255,255,.1);
-  padding: 1.2rem 2rem;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: transform .2s;
-}
-.letter:hover{ transform: scale(1.05); }
-.letter-text{
-  margin-top: 1.5rem;
-  font-size: 1.05rem;
-  font-style: italic;
-  color: #fefefe;
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.title-cartas{
-  font-family: "Cormorant", serif;
-  text-align: center;
-  font-size: 1.9rem;
-  font-weight: 900;
-  margin-bottom: .5rem;
-  color: #FBF4E4;
+/* Cartas */
+.letters {
+    text-align: center;
+    margin: 3rem auto;
 }
 
-.text-cartas{
-  font-family: "Cormorant", serif;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #FBF4E4;
+.letters-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
+
+.letter {
+    background: rgba(255,255,255,.1);
+    padding: 1.2rem 2rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.letter:hover {
+    transform: scale(1.05);
+}
+
+.letter-text {
+    margin-top: 1.5rem;
+    font-size: 1.05rem;
+    font-style: italic;
+    color: #fefefe;
+}
+
+.title-cartas {
+    font-family: "Cormorant", serif;
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 900;
+    margin-bottom: .5rem;
+    color: #FBF4E4;
+}
+
+.text-cartas {
+    font-family: "Cormorant", serif;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #FBF4E4;
+}
+
+/* Seção reencontro */
+.reencontro {
+    max-width: 100%;
+    height: 100%;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.178);
+    text-align: center;
+    color: #fff;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.reencontro h2 {
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
 

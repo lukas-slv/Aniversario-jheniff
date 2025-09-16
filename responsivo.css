@@ -5,13 +5,13 @@
 
 /* Para telas até 480px (celulares pequenos) */
 @media (max-width: 480px) {
-   #titulo-principal {
-       display: none;
+    #titulo-principal {
+        display: none;
     }
+
     #aniversario {
         max-width: 95vw;
-        margin: 0rem auto;
-
+        margin: 0 auto;
     }
 
     .h1001, .h1002, .h1003 {
@@ -20,36 +20,42 @@
         max-width: 90vw;
         margin: 0.5rem auto;
     }
+
     .div-conteudo {
         margin: 20px;
     }
+
     .p-conteudo {
         font-size: 17px;
         text-align: justify;
         margin: 0 1rem;
     }
 
-    #jheniff {
+    #jheniff,
+    .destaque02,
+    .div-pai {
         display: block;
+        width: 100%;
         max-width: 90vw;
-        width: 400%;
-        height: auto;
         margin: 1rem auto;
+        box-sizing: border-box;
+    }
+
+    #jheniff {
+        height: auto;
+        border-radius: 12px;
         box-shadow: 0 4px 16px rgba(0,0,0,0.15);
     }
 
     .destaque02 {
         font-size: clamp(0.9rem, 1.5vw, 1.2rem);
         text-align: justify;
-        margin: 0 1rem;
     }
 
     .div-pai {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        margin: 1rem auto;
-        width: 100%;
     }
 
     .mensagem, .mensagem--03 {
@@ -59,30 +65,28 @@
         box-sizing: border-box;
     }
 
-    
-     
-    #mensagem02{
-       
-        max-width: 300%;
+    #mensagem02 {
+        max-width: 90vw;
         height: auto;
         margin-top: 10px;
     }
+
     .img-logo001, .img-logo002, .img-logo003 {
         max-width: 60vw;
         margin: 1rem auto;
         display: block;
         height: auto;
     }
+
     .img-logo001 {
         max-width: 35vw;
-        margin: 0rem auto;
+        margin: 0 auto;
     }
 
     .data-aniversario {
-        font-size: clamp(-2.9rem, 3.5vw, 1.2rem);
+        font-size: clamp(1rem, 3.5vw, 1.2rem);
         text-align: center;
-        margin: 0.5rem auto;
-        margin-bottom: -70px;
+        margin: 0.5rem auto -70px auto;
         display: flex;
         justify-content: center;
         gap: 0.5rem;
@@ -130,9 +134,9 @@
         max-width: 95vw;
         margin: 1rem auto;
     }
+
     .h1001 {
         font-size: clamp(2rem, 10vw, 35rem);
-        
         margin: 1rem auto;
     }
 
