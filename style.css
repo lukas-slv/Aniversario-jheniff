@@ -4,17 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Fjalla+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 /* Reset e base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 html, body {
     background-color: #37585C;
-    width: 100%;
-    min-height: 100vh;
+   
 }
 
 /* Header */
@@ -26,40 +19,10 @@ header {
 
 h1#titulo-principal {
     color: #d68a10;
-    font-size: 2em;
+    font-size: 5em;
     font-family: "Cormorant", serif;
     text-align: center;
-    margin-bottom: -30px;
-}
-
-/* Imagens principais */
-#aniversario {
-    display: block;
-    margin: 40px auto 20px auto;
-    max-width: 99.9%;
-    height: auto;
-}
-
-.img-logo001,
-.img-logo002,
-.img-logo003 {
-    display: block;
-    height: auto;
-}
-
-.img-logo001 {
-    margin: 30px auto -20px auto;
-    max-width: 17%;
-}
-
-.img-logo002 {
-    margin: 20px auto -20px auto;
-    max-width: 17%;
-}
-
-.img-logo003 {
-    margin: -50px auto -20px auto;
-    max-width: 35%;
+    margin-bottom: 30px;
 }
 
 /* Títulos */
@@ -68,7 +31,7 @@ h1#titulo-principal {
     font-family: "Cormorant", serif;
     margin: 2px auto 0 auto;
     max-width: 60vw;
-    color: #F5EEE3;
+    color: #ffffff;
     font-size: 3.2em;
     font-weight: 100;
     line-height: 1.2em;
@@ -78,7 +41,7 @@ h1#titulo-principal {
     font-family: "Cormorant", serif;
     margin: 20px auto 0 auto;
     max-width: 60vw;
-    color: #EFE9DE;
+    color: #ffffff;
     font-size: 3.7em;
     font-weight: 100;
     line-height: 1.2em;
@@ -98,7 +61,9 @@ h1#titulo-principal {
 /* Linha horizontal */
 hr {
     width: 100%;
+    border: none;
     height: 2px;
+    
     background-color: rgba(255, 255, 255, 0.562);
 }
 
@@ -138,26 +103,18 @@ section > div {
     flex-wrap: nowrap;
 }
 
-.mensagem {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
-    max-width: 600px;
-    min-height: 700px;
-    margin: 20px 9px;
-    font-weight: lighter;
-}
 
-.mensagem--02 {
+.mensagem-02 {
     background-color: #778885;
-    display: flex;
-    padding: 0px 60px;
-    max-width: 600px;
-    height: 700px;
-    margin: 20px 9px;
-    font-weight: lighter;
+   justify-content: center;
+    align-items: center;
+    display: block;
+ 
+    height: 90%;
+    padding: 90px;
+
+  
+    
 }
 
 .mensagem--03 {
