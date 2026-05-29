@@ -64,8 +64,9 @@
     }
 
     .destaque02 {
+        text-align: left;
         font-size: clamp(0.9rem, 1.5vw, 1.2rem);
-        text-align: justify;
+        max-width: 90vw;
     }
 
     .div-pai {
@@ -75,13 +76,21 @@
     }
 
     .mensagem, .mensagem--03 {
-        
         padding: 1rem;
         min-height: auto;
         box-sizing: border-box;
     }
 
+    #destaque02 {
+        margin: 1rem auto;
+        color: #ffffff;
+        text-align: left;
+        font-size: clamp(1rem, 1vw, 1.2rem);
+        max-width: 90vw;
+    }
+
     #mensagem02 {
+        text-align: left;
         max-width: 90vw;
         height: auto;
         margin-top: 10px;
@@ -102,7 +111,7 @@
     .data-aniversario {
         font-size: clamp(1rem, -0.5vw, 1.2rem);
         text-align: center;
-        margin: 0.5rem auto -70px auto;
+        margin: -40px auto 50px auto;
         display: flex;
         justify-content: center;
         gap: 0.5rem;
@@ -173,10 +182,16 @@
         max-width: 95vw;
         margin: 1rem auto;
     }
+    
 
     .h1001 {
         font-size: clamp(2rem, 10vw, 35rem);
         margin: 1rem auto;
+    }
+
+    .h1002 {
+        margin: 0.5rem auto;
+        font-size: clamp(2rem, 5vw, 2.5rem);
     }
 
     .letters-grid {

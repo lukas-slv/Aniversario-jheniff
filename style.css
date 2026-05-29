@@ -39,7 +39,7 @@ h1#titulo-principal {
     margin: 2px auto 0 auto;
     max-width: 60vw;
     color: #7e5454;
-    font-size: 32em;
+    font-size: 3em;
     font-weight: 700;
   
 }
@@ -130,7 +130,6 @@ section > div {
 
 .mensagem--03 {
     background-image: url("imagem topo/download\ \(3\).jpg");
-
     color: #ffffff;
     display: block;
     max-width: 200.9%;
@@ -182,6 +181,8 @@ article {
 }
 
 .destaque02 {
+    text-align: left;
+    font-family: "Cormorant", serif;
    margin-top: 49px;
    color: #ffffff;
    font-weight: 200;
