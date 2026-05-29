@@ -5,26 +5,24 @@
 
 /* Para telas até 480px (celulares pequenos) */
 @media (max-width: 480px) {
-    #titulo-principal {
-        display: none;
-    }
+   
 
     .music {
      text-align: center;
-     margin-top: 88px;
-     margin-bottom: -117px;    
+     margin-top: 8px;
+     margin-bottom: 17px;    
      padding: 20px;
     }
 
     .music :hover {
      transform: scale(1.05);
      transition: transform .2s;
-     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.623);
+     box-shadow: 0 4px 12px rgba(255, 0, 140, 0.623);
     }
     .music audio {
-     width: 250px;
-     height: 35px;
-     border-radius: 20px;
+     width: 300px;
+     height: 39px;
+     border-radius: 29px;
     }
 
 
@@ -42,7 +40,7 @@
     }
 
     .div-conteudo {
-        margin: 20px;
+        margin: 2px;
     }
 
     .p-conteudo {
@@ -132,17 +130,20 @@
     height: 100%;
     margin: 3rem auto;
     padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.178);
+    background: rgb(43, 2, 61);
     text-align: justify;
     color: #fff;
     line-height: 1.5;
     font-size: 1.1rem;
+    border-radius: 30px;
+   background: linear-gradient(to top, rgb(120, 8, 134), rgb(43, 2, 61));
 }
 
 .reencontro h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     color: #ffffff;
+    font-size: 2em;
+
 }
 
 
