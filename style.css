@@ -6,19 +6,20 @@
 /* Reset e base */
 
 html, body {
-    background-color: #37585C;
+    background-color: #860c86e1;
    
 }
 
 /* Header */
 header {
+      
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 h1#titulo-principal {
-    color: #d68a10;
+    color: #f0b7f1;
     font-size: 5em;
     font-family: "Cormorant", serif;
     text-align: center;
@@ -52,7 +53,7 @@ h1#titulo-principal {
     font-family: "Cormorant", serif;
     margin: 20px auto 0 auto;
     max-width: 60vw;
-    color: #37585C;
+    color: #1e376e;
     font-size: 3.6em;
     font-weight: 100;
     line-height: 1.2em;
@@ -105,14 +106,15 @@ section > div {
 
 
 .mensagem-02 {
-    background-color: #778885;
-   justify-content: center;
+    background-image: url("imagem topo/♡\ kalp.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    justify-content: center;
     align-items: center;
     display: block;
- 
-    height: 90%;
     padding: 90px;
-
+    
   
     
 }
