@@ -6,7 +6,8 @@
 /* Reset e base */
 
 html {
-    background-color: #860c86e1;
+     background: linear-gradient(to bottom, rgb(120, 8, 134), rgb(43, 2, 61));
+   
    
 }
 
@@ -25,6 +26,8 @@ header {
     margin-bottom: 50px;
 }
 h1#titulo-principal {
+   
+    text-shadow: 2px 2px 4px rgb(255, 0, 170);
     color: #f0b7f1;
     font-size: 3em;
     font-family: "Cormorant", serif;
