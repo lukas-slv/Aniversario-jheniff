@@ -8,6 +8,19 @@
    
 
     .music {
+       
+        padding: 1rem;
+        border-radius: 30px;
+    }
+  
+    .music img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .music h3 {
      text-align: center;
      margin-top: 8px;
      margin-bottom: 17px;    
@@ -20,6 +33,7 @@
      box-shadow: 0 4px 12px rgba(255, 0, 140, 0.623);
     }
     .music audio {
+     background: #cf9816;
      width: 300px;
      height: 39px;
      border-radius: 29px;
@@ -80,7 +94,13 @@
         min-height: auto;
         box-sizing: border-box;
     }
-
+    .p-destaque04 {
+        color: #ffffff;
+        margin: 1rem auto;
+        text-align: center;
+        font-size: 13px;
+        width: 70%;
+    }
     #destaque02 {
         margin: 1rem auto;
         color: #ffffff;
@@ -113,7 +133,7 @@
         text-shadow: 1px 1px 3px rgb(255, 0, 170);
         font-size: clamp(1rem, -0.5vw, 1.2rem);
         text-align: center;
-        margin: -40px auto 50px auto;
+        margin: -40px auto 30px auto;
         display: flex;
         justify-content: center;
         gap: 0.5rem;
@@ -121,9 +141,9 @@
 
     .vertical-line {
         text-shadow: 1px 1px 3px rgb(255, 0, 170);
-        height: 2.5em;
+        height: 1em;
         margin: 0 0.2rem;
-        width: 2px;
+        width: 1px;
         background: #ffffff;
         border: none;
         display: inline-block;
