@@ -10,16 +10,19 @@
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
+    
 }
 
 .titulo-arco svg {
     width: 100%;
     height: auto;
+   
 }
 
 .titulo-arco text {
+   
     fill: white; /* ou a cor do seu site */
-    font-size: 28px;
+    font-size: 46px;
     font-family: 'Georgia', serif;
     font-weight: bold;
 }
