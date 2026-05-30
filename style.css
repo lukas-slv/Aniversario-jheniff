@@ -11,6 +11,27 @@ html {
    
 }
 
+
+.titulo-arco {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.titulo-arco svg {
+    width: 100%;
+    height: auto;
+}
+
+.titulo-arco text {
+    fill: white; /* ou a cor do seu site */
+    font-size: 28px;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+
+
 /* Header */
 header {
     display: flex;
@@ -26,6 +47,8 @@ header {
     margin-bottom: 50px;
 }
 h1#titulo-principal {
+    display: inline-block;
+    transform: rotate(-5deg);
     text-shadow: 2px 2px 4px rgb(41, 38, 40);
     color: #ffffff;
     font-size: 3em;
